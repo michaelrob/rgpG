@@ -11,23 +11,19 @@ class World {
     this.width = tiles.length
     this.height = tiles[0].length
   }
+
+  Tile tile(int x, int y) {
+    if (x < 0 || x >= width || y < 0 || y >= height)
+      return Tile.BOUNDS
+    else
+      return tiles[x][y]
+  }
+
+  char glyph(int x, int y) {
+    tile(x, y).glyph()
+  }
+
+  Color color(int x, int y) {
+    tile(x, y).color()
+  }
 }
-
-/*
-
-public Tile tile(int x, int y){
-  if (x < 0 || x >= width || y < 0 || y >= height)
-    return Tile.BOUNDS;
-  else
-    return tiles[x][y];
-}
-
-public char glyph(int x, int y){
-  return tile(x, y).glyph();
-}
-
-public Color color(int x, int y){
-  return tile(x, y).color();
-}
-
-*/
