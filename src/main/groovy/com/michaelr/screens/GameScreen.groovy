@@ -73,8 +73,6 @@ class GameScreen implements Screen {
       case KeyEvent.VK_B: scrollBy(-1, 1); break
       case KeyEvent.VK_N: scrollBy( 1, 1); break
     }
-
-    this
   }
 }
 
