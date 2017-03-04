@@ -50,7 +50,6 @@ class WorldBuilder {
       }
       tiles = tiles2
     }
-    return this;
   }
 
   WorldBuilder makeCaves() {
