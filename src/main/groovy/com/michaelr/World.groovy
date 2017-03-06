@@ -5,6 +5,7 @@ import java.awt.Color;
 class World {
   private Tile[][] tiles
   int width
+  int height
 
   World(Tile[][] tiles) {
     this.tiles = tiles

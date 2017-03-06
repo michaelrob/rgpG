@@ -21,6 +21,8 @@ class WorldBuilder {
         tiles[x][y] = Math.random() < 0.5 ? Tile.FLOOR : Tile.WALL
       }
     }
+
+    return this
   }
 
   private WorldBuilder smooth(int times) {
@@ -50,6 +52,8 @@ class WorldBuilder {
       }
       tiles = tiles2
     }
+
+    return this
   }
 
   WorldBuilder makeCaves() {
