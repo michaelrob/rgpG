@@ -23,11 +23,13 @@ class GameScreen implements Screen {
   }
 
   int getScrollX() {
-    Math.max(0, Math.min(centerX - screenWidth / 2, world.width() - screenWidth))
+    BigDecimal second = new BigDecimal(world.width() - screenWidth)
+    Math.max(0, Math.min(centerX - screenWidth / 2, second))
   }
 
   int getScrollY() {
-    Math.max(0, Math.min(centerY - screenHeight / 2, world.height() - screenHeight))
+    BigDecimal second = new BigDecimal(world.height() - screenHeight)
+    Math.max(0, Math.min(centerY - screenHeight / 2, second))
   }
 
   void displayOutput(AsciiPanel terminal) {
