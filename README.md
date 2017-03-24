@@ -24,3 +24,7 @@ Build tasks available:
 Navigate to the project root directory and run:
 
 `java -jar builds/libs/rgpG-0.1.jar`
+
+## Test
+
+
