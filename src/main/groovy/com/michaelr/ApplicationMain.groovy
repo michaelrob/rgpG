@@ -18,7 +18,6 @@ class ApplicationMain extends JFrame implements KeyListener {
     terminal = new AsciiPanel()
     screen = new StartScreen()
 
-    terminal.write("rgpG -- Groovy Roguelike", 1, 1)
     add(terminal)
     pack()
     addKeyListener(this)
