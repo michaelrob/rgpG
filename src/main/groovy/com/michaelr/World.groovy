@@ -20,14 +20,6 @@ class World {
       return tiles[x][y]
   }
 
-  int height() {
-    height
-  }
-
-  int width() {
-    width
-  }
-
   char glyph(int x, int y) {
     tile(x, y).glyph()
   }

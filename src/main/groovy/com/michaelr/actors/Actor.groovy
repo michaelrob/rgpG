@@ -11,14 +11,6 @@ class Actor {
   char glyph
   Color color
 
-  char glyph() {
-    glyph
-  }
-
-  Color color() {
-    color
-  }
-
   Actor(World world, char glyph, Color color) {
     this.world = world
     this.glyph = glyph
