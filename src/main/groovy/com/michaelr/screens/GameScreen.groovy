@@ -32,6 +32,7 @@ class GameScreen implements Screen {
     Math.max(0, Math.min(centerY - screenHeight / 2, second))
   }
 
+  @Override
   void displayOutput(AsciiPanel terminal) {
     int left = getScrollX()
     int top = getScrollY()
@@ -58,6 +59,7 @@ class GameScreen implements Screen {
     centerY = Math.max(0, Math.min(centerY + my, world.height() - 1))
   }
 
+  @Override
   Screen respondToUserInput(KeyEvent key) {
     switch (key.getKeyCode()) {
       case KeyEvent.VK_ESCAPE: return new LoseScreen()
