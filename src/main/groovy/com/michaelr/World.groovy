@@ -21,10 +21,10 @@ class World {
   }
 
   char glyph(int x, int y) {
-    tile(x, y).glyph()
+    tile(x, y).glyph
   }
 
   Color color(int x, int y) {
-    tile(x, y).color()
+    tile(x, y).color
   }
 }

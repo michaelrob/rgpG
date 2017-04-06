@@ -23,12 +23,12 @@ class GameScreen implements Screen {
   }
 
   int getScrollX() {
-    BigDecimal second = new BigDecimal(world.width() - screenWidth)
+    BigDecimal second = new BigDecimal(world.width - screenWidth)
     Math.max(0, Math.min(centerX - screenWidth / 2, second))
   }
 
   int getScrollY() {
-    BigDecimal second = new BigDecimal(world.height() - screenHeight)
+    BigDecimal second = new BigDecimal(world.height - screenHeight)
     Math.max(0, Math.min(centerY - screenHeight / 2, second))
   }
 
@@ -55,8 +55,8 @@ class GameScreen implements Screen {
   }
 
   private void scrollBy(int mx, int my){
-    centerX = Math.max(0, Math.min(centerX + mx, world.width() - 1))
-    centerY = Math.max(0, Math.min(centerY + my, world.height() - 1))
+    centerX = Math.max(0, Math.min(centerX + mx, world.width - 1))
+    centerY = Math.max(0, Math.min(centerY + my, world.height - 1))
   }
 
   @Override

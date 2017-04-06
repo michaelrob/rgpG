@@ -1,6 +1,7 @@
 package com.michaelr.actors
 
 import java.awt.Color
+import com.michaelr.World
 
 class Actor {
   private World world
