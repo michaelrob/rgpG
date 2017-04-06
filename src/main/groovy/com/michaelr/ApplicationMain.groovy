@@ -24,19 +24,23 @@ class ApplicationMain extends JFrame implements KeyListener {
     repaint()
   }
 
+  @Override
   void repaint() {
     terminal.clear()
     screen.displayOutput(terminal)
     super.repaint()
   }
 
+  @Override
   void keyPressed(KeyEvent e) {
     screen = screen.respondToUserInput(e)
     repaint()
   }
 
+  @Override
   void keyReleased(KeyEvent e) { }
 
+  @Override
   void keyTyped(KeyEvent e) { }
 
   static void main(String[] args) {
