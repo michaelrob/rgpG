@@ -1,4 +1,4 @@
-package rltut;
+package com.michaelr.actors;
 
 public class ActorAi {
 	protected Actor actor;
@@ -8,6 +8,6 @@ public class ActorAi {
 		this.actor.setActorAi(this);
 	}
 
-	public void onEnter(int x, int y, Tile tile){
+	void onEnter(int x, int y, Tile tile){
 	}
 }
