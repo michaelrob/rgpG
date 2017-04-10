@@ -15,4 +15,8 @@ enum Tile {
     this.glyph = glyph
     this.color = color
   }
+
+  boolean isDiggable() {
+    this == Tile.WALL;
+  }
 }
