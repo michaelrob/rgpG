@@ -19,4 +19,8 @@ enum Tile {
   boolean isDiggable() {
     this == Tile.WALL
   }
+
+  boolean isGround() {
+    this != WALL && this != BOUNDS
+  }
 }
