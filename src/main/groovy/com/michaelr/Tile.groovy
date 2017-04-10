@@ -17,6 +17,6 @@ enum Tile {
   }
 
   boolean isDiggable() {
-    this == Tile.WALL;
+    this == Tile.WALL
   }
 }

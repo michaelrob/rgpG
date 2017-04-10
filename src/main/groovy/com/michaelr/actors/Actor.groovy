@@ -27,6 +27,6 @@ class Actor {
   }
 
   void dig(int wx, int wy) {
-    world.dig(wx, wy);
+    world.dig(wx, wy)
   }
 }

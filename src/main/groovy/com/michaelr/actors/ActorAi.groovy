@@ -5,7 +5,7 @@ public class ActorAi {
 
 	ActorAi(Actor actor) {
 		this.actor = actor
-		this.actor.setActorAi(this);
+		this.actor.setActorAi(this)
 	}
 
 	void onEnter(int x, int y, Tile tile){
