@@ -12,14 +12,14 @@ class Actor {
   char glyph
   Color color
 
-  void setActorAi(ActorAi ai) {
-    this.ai = ai
-  }
-
   Actor(World world, char glyph, Color color) {
     this.world = world
     this.glyph = glyph
     this.color = color
+  }
+
+  void setActorAi(ActorAi ai) {
+    this.ai = ai
   }
 
   void moveBy(int mx, int my){
