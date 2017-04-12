@@ -1,4 +1,6 @@
-package com.michaelr.actors;
+package com.michaelr.actors
+
+import com.michaelr.Tile
 
 public class PlayerAi extends ActorAi {
   public PlayerAi(Actor actor) {

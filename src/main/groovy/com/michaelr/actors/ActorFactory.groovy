@@ -1,10 +1,11 @@
 package com.michaelr.actors
 
 import asciiPanel.AsciiPanel
+import com.michaelr.World
 
 class ActorFactory {
 	World world
-	
+
 	ActorFactory(World world) {
 		this.world = world
 	}
@@ -13,7 +14,7 @@ class ActorFactory {
 		Actor player = new Actor(world, '@', AsciiPanel.brightWhite)
 		world.addAtEmptyLocation(player)
 		new PlayerAi(player)
-		
+
 		return player
 	}
 }
