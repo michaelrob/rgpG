@@ -1,5 +1,7 @@
 package com.michaelr.actors;
 
+import com.michaelr.Tile
+
 public class ActorAi {
 	protected Actor actor;
 
