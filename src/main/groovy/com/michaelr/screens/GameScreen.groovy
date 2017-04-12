@@ -4,6 +4,7 @@ import java.awt.event.KeyEvent
 import asciiPanel.AsciiPanel
 import com.michaelr.World
 import com.michaelr.WorldBuilder
+import com.michaelr.actors.ActorFactory
 
 class GameScreen implements Screen {
   private World world
@@ -13,9 +14,12 @@ class GameScreen implements Screen {
   private int screenHeight
 
   GameScreen(){
-      screenWidth = 80
-      screenHeight = 21
-      createWorld()
+    screenWidth = 80
+    screenHeight = 21
+    createWorld()
+
+    ActorFactory actorFactory = new ActorFactory(world)
+    player = actorFactory.newPlayer()
   }
 
   private void createWorld(){
