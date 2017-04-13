@@ -2,17 +2,17 @@ package com.michaelr.actors
 
 import com.michaelr.Tile
 
-public class PlayerAi extends ActorAi {
-  public PlayerAi(Actor actor) {
+class PlayerAi extends ActorAi {
+  PlayerAi(Actor actor) {
     super(actor)
   }
 
   void onEnter(int x, int y, Tile tile) {
     if (tile.isGround()) {
-        creature.x = x
-        creature.y = y
+        actor.x = x
+        actor.y = y
     } else if (tile.isDiggable()) {
-        creature.dig(x, y)
+        actor.dig(x, y)
     }
   }
 }
