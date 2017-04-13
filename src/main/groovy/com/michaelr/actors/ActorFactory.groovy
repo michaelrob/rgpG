@@ -11,7 +11,7 @@ class ActorFactory {
 	}
 
 	Actor newPlayer() {
-		Actor player = new Actor(world, '@', AsciiPanel.brightWhite)
+		Actor player = new Actor(world, '@' as char, AsciiPanel.brightWhite)
 		world.addAtEmptyLocation(player)
 		new PlayerAi(player)
 
