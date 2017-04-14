@@ -1,6 +1,7 @@
 package com.michaelr
 
-import java.awt.Color;
+import java.awt.Color
+import com.michaelr.actors.Actor
 
 class World {
   private Tile[][] tiles
@@ -26,5 +27,18 @@ class World {
 
   Color color(int x, int y) {
     tile(x, y).color
+  }
+
+  void addAtEmptyLocation(Actor actor) {
+    int x
+    int y
+
+    while (!tile(x,y).isGround()) {
+      x = (int)(Math.random() * width)
+      y = (int)(Math.random() * height)
+    }
+
+    actor.x = x
+    actor.y = y
   }
 }
