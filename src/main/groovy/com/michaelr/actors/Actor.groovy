@@ -5,6 +5,7 @@ import com.michaelr.World
 
 class Actor {
   private World world
+  private ActorAi ai
 
   int x
   int y

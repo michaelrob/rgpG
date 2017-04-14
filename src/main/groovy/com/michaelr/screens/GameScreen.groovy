@@ -12,6 +12,7 @@ class GameScreen implements Screen {
   private int centerY
   private int screenWidth
   private int screenHeight
+  private Actor player
 
   GameScreen(){
     screenWidth = 80
