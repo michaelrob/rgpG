@@ -4,7 +4,7 @@ import java.awt.event.KeyEvent
 import asciiPanel.AsciiPanel
 import com.michaelr.World
 import com.michaelr.WorldBuilder
-import com.michaelr.actors.ActorFactory
+import com.michaelr.actors.*
 
 class GameScreen implements Screen {
   private World world
