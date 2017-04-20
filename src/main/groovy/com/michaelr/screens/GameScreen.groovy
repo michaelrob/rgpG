@@ -20,7 +20,7 @@ class GameScreen implements Screen {
     createWorld()
 
     ActorFactory actorFactory = new ActorFactory(world)
-    player = actorFactory.newPlayer()
+    player = actorFactory.newPlayer() // this isn't doing what it should
   }
 
   private void createWorld(){
