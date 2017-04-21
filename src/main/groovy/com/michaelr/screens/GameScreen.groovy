@@ -20,7 +20,7 @@ class GameScreen implements Screen {
     createWorld()
 
     ActorFactory actorFactory = new ActorFactory(world)
-    player = actorFactory.newPlayer() // this isn't doing what it should
+    player = actorFactory.newPlayer()
   }
 
   private void createWorld(){
@@ -44,7 +44,7 @@ class GameScreen implements Screen {
 
     displayTiles(terminal, left, top)
 
-    terminal.write('X', centerX - left, centerY - top)
+    terminal.write(player.glyph(), player.x - left, player.y - top, player.color())
     terminal.writeCenter("-- press [escape] to lose or [enter] to win --", 22)
   }
 
