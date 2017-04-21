@@ -44,7 +44,7 @@ class GameScreen implements Screen {
 
     displayTiles(terminal, left, top)
 
-    terminal.write(player.glyph(), player.x - left, player.y - top, player.color())
+    terminal.write(player.glyph, player.x - left, player.y - top, player.color)
     terminal.writeCenter("-- press [escape] to lose or [enter] to win --", 22)
   }
 
